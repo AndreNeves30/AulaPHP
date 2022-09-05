@@ -1,11 +1,11 @@
 <?php
 
-$salB= 3000;
+$salB= 5000;
 $salL= $salB;
 $inss= 1;
 $dinss= 1;
-$grupo= 3;
-$dgrupo= 1;
+$grupo= 2;
+$dgrupo= 0;
 $ir=1;
 $dir=1;
 
@@ -39,7 +39,6 @@ switch ($inss) {
 		echo "saindo ";
 		break;
 	}
-echo "O desconto do inss será ".$dinss." reais e ";
 
 if ($salB < 1903){
 	$ir = 1;
@@ -74,28 +73,30 @@ switch ($ir) {
 		$dir = $salB * 0.275;
 		break;
 	default:
-		echo "saindo ";
 		break;
 	}
-echo "o desconto do ir será ".$dir." reais.";
 
 switch ($grupo) {
 	case '1':
 		$dgrupo = $salB * 0.15;
-		echo "\n Voce pertence ao grupo A e seu desconto será de ".$dgrupo." reais.";
+		echo "</br> Voce pertence ao grupo A";
 		break;
 	case '2':
 		$dgrupo = $salB * 0.1;
-		echo "\n Voce pertence ao grupo B e seu desconto será de ".$dgrupo." reais.";
+		echo "</br> Voce pertence ao grupo B ";
 		break;
 	case '3':
 		$dgrupo = $salB * 0.05;
-		echo "\n Voce pertence ao grupo C e seu desconto será de ".$dgrupo." reais.";
+		echo "</br> Voce pertence ao grupo C ";
 		break;
 	default:
-		echo "\n Voce não pertence a nenhum grupo sem desconto. ";
+		echo "</br> Voce não pertence a nenhum grupo.";
 		break;
 		}
 $salL= $salB - $dgrupo - $dinss - $dir;
-echo "\n Seu salário bruto é ".$salB." reais e o seu salário liquido será ".$salL." reais."
+echo "</br>Seu salário bruto é ".$salB." reais.";
+echo "</br>Seu desconto do inss é ".$dinss." reais.";
+echo "</br>Seu desconto do ir é ".$dir." reais.";
+echo "</br>Seu desconto do grupo é ".$dgrupo." reais.";
+echo "</br>Seu salário liquído é ".$salL." reais.";
  ?>
