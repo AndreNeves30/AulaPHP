@@ -35,11 +35,11 @@
 					?>	
 
 					<tr>
-							<td><?php echo $dados['nome']; ?></td>
-							<td><?php echo $dados['sobrenome']; ?></td>
-							<td><?php echo $dados['email']; ?></td>
-							<td><?php echo $dados['sexo']; ?></td>
-							<td><?php echo $dados['cpf']; ?></td>
+							<td><?php echo $dados['Nome']; ?></td>
+							<td><?php echo $dados['Sobrenome']; ?></td>
+							<td><?php echo $dados['Email']; ?></td>
+							<td><?php echo $dados['Sexo']; ?></td>
+							<td><?php echo $dados['CPF']; ?></td>
 							      
 							     
 							    </div>
