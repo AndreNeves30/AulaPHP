@@ -10,7 +10,7 @@ class ContaCorrente extends Conta{
 	$this->limite = $limite;
 }
 
-function Retirar($quantia)
+function Retirar($quantia){
 
 	$cpmf = 0.05;
 
@@ -23,9 +23,10 @@ function Retirar($quantia)
 	else 
 	{
 		echo "<br>Retirada não permitida ... <br>";
-		retunr false;
+		return false;
 	}
 
 	return true;
+	}
 }
  ?>
