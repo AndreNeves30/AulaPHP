@@ -4,8 +4,7 @@
 
 		function __construct($agencia, $codigo, $dataDeCriacao,$titular, $senha, $saldo, $aniversario)
 		{
-		parent:: __construct($agencia, $codigo, $dataDeCriacao
-			, $titular, $senha, $saldo);
+		parent:: __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo);
 		$this->aniversario = $aniversario;
 
 		}

@@ -35,7 +35,6 @@
 			$this->dataDeCriacao = $dataDeCriacao;
 			$this->titular = $titular;
 			$this->senha = $senha;
-
 			$this->depositar($saldo);
 			$this->cancelada = false;
 		}
