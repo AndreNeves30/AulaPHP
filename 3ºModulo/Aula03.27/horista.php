@@ -5,16 +5,16 @@
 		var $precoHora;
 		var $horasTrabalhadas;
 
-		function __construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas){
+		function Horista__construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas){
         parent:: __construct($nome, $sobrenome, $cpf);
 		$this->precoHora = $precoHora;
 		$this->horasTrabalhadas = $horasTrabalhadas;
 
 		}
 
-		function vencimento($salrock,$salwater){
+		function vencimentoH($salrock,$salwater){
         $salrock = $this->horasTrabalhadas * $this->precoHora;
-        $salwater = $salrock - $desconto;
+        $salwater = $salrock * 0.85;
  	}
 
 

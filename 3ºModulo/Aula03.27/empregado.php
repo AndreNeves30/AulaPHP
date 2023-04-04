@@ -6,11 +6,11 @@
  	var $cpf;
 
  	function vencimento($salrock,$salwater){
-        $salwater = $salrock - $desconto;
+        $salwater = $salrock * 0.85;
  	}
 
 
-        function __construct($nome, $sobrenome, $cpf){
+        function Empregado__construct($nome, $sobrenome, $cpf){
 
             $this->nome = $nome;
             $this->sobrenome = $sobrenome;

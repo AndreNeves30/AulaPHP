@@ -5,15 +5,15 @@
 		var $salario;
 
 
-        function __construct($nome, $sobrenome, $cpf, $salario){
-        parent:: __construct($nome, $sobrenome, $cpf);
+        function Assalariado__construct($nome, $sobrenome, $cpf, $salario){
+        parent:: __construct($nome, $sobrenome, $cpf, $salario);
 		$this->salario = $salario;
 
 		}
 
 		function vencimento($salrock,$salwater){
         $salrock = $this->salario;
-        $salwater = $salrock - $desconto;
+        $salwater = $salrock * 0.85;
  	}
 
 
