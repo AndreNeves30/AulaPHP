@@ -5,8 +5,9 @@
  	var $sobrenome;
  	var $cpf;
 
- 	function vencimento($salrock,$salwater){
+ 	function vencimento($salrock){
         $salwater = $salrock * 0.85;
+        return $salwater;
  	}
 
 

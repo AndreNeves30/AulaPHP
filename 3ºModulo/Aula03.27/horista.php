@@ -1,6 +1,9 @@
 <?php 
+include_once "empregado.php";
 
 	class Horista extends Empregado{
+
+	
 
 		var $precoHora;
 		var $horasTrabalhadas;
@@ -12,9 +15,9 @@
 
 		}
 
-		function vencimentoH($salrock,$salwater){
-        $salrock = $this->horasTrabalhadas * $this->precoHora;
+		function vencimentoH($salrock){
         $salwater = $salrock * 0.85;
+		return $salwater;
  	}
 
 

@@ -1,5 +1,7 @@
 <?php 
 
+include_once "empregado.php";
+
 class Comissionado extends Empregado{
 
 		var $totalVenda;
@@ -13,9 +15,9 @@ class Comissionado extends Empregado{
 
 		}
 
-		function vencimento($salrock,$salwater){
-        $salrock = $this->totalVenda * $this->taxaComissao;
+		function vencimento($salrock){
         $salwater = $salrock * 0.85;
+		return $salwater;
  	}
 
 

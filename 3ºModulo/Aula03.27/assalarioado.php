@@ -1,6 +1,9 @@
 <?php 
+include_once "empregado.php";
 
 	class Assalariado extends Empregado{
+
+		
 
 		var $salario;
 
@@ -11,9 +14,9 @@
 
 		}
 
-		function vencimento($salrock,$salwater){
-        $salrock = $this->salario;
+		function vencimento($salrock){
         $salwater = $salrock * 0.85;
+		return $salwater;
  	}
 
 
