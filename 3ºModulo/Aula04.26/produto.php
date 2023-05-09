@@ -6,7 +6,7 @@ class Produto {
     var $Preco;
     var $Quantidade;
 
-    function ImprimirEtiqueta(){
+    function ImprimeEtiqueta(){
         print 'Codigo: ' . $this-> Codigo. "<br>";
         print 'Descrição: ' . $this-> Descricao. "<br><br>";
     }
